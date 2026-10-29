@@ -1,0 +1,28 @@
+﻿--- A 纯反应体（旧沙盘模型） ---
+  第1次 刺激=food   反应=吃      状态={'hunger': 0.4}
+  第2次 刺激=food   反应=吃      状态={'hunger': 0.30000000000000004}
+  第3次 刺激=threat 反应=逃      状态={'hunger': 0.30000000000000004}
+  第4次 刺激=food   反应=吃      状态={'hunger': 0.20000000000000004}
+  第5次 刺激=threat 反应=逃      状态={'hunger': 0.20000000000000004}
+  第6次 刺激=threat 反应=逃      状态={'hunger': 0.20000000000000004}
+  第7次 刺激=food   反应=吃      状态={'hunger': 0.10000000000000003}
+  第8次 刺激=love   反应=无感     状态={'hunger': 0.10000000000000003}
+  第9次 刺激=food   反应=吃      状态={'hunger': 2.7755575615628914e-17}
+  第10次 刺激=love   反应=无感     状态={'hunger': 2.7755575615628914e-17}
+
+--- B 人式接收体（当人模拟） ---
+  第1次 刺激=food   反应=吃      状态={'memory': {'food': 1, 'threat': 0, 'love': 0}, 'mood': 0.55, 'sensitized': 0}
+  第2次 刺激=food   反应=吃      状态={'memory': {'food': 2, 'threat': 0, 'love': 0}, 'mood': 0.6, 'sensitized': 0}
+  第3次 刺激=threat 反应=逃      状态={'memory': {'food': 2, 'threat': 1, 'love': 0}, 'mood': 0.5, 'sensitized': 0.2}
+  第4次 刺激=food   反应=安心吃    状态={'memory': {'food': 3, 'threat': 1, 'love': 0}, 'mood': 0.55, 'sensitized': 0.2}
+  第5次 刺激=threat 反应=预判绕行   状态={'memory': {'food': 3, 'threat': 2, 'love': 0}, 'mood': 0.45, 'sensitized': 0.4}
+  第6次 刺激=threat 反应=预判绕行   状态={'memory': {'food': 3, 'threat': 3, 'love': 0}, 'mood': 0.35, 'sensitized': 0.6}
+  第7次 刺激=food   反应=安心吃    状态={'memory': {'food': 4, 'threat': 3, 'love': 0}, 'mood': 0.4, 'sensitized': 0.6}
+  第8次 刺激=love   反应=记住     状态={'memory': {'food': 4, 'threat': 3, 'love': 1}, 'mood': 0.5, 'sensitized': 0.6}
+  第9次 刺激=food   反应=安心吃    状态={'memory': {'food': 5, 'threat': 3, 'love': 1}, 'mood': 0.55, 'sensitized': 0.6}
+  第10次 刺激=love   反应=记住     状态={'memory': {'food': 5, 'threat': 3, 'love': 2}, 'mood': 0.65, 'sensitized': 0.6}
+
+判据：
+  1. A 对同一刺激反应恒定： 是
+  2. B 对同一刺激反应依赖历史： 是
+  3. A、B 行为无差（对照是否成立）： 有差→人式接收参与适应
